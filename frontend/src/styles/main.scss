@@ -1,0 +1,262 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: FogtwoNo5;
+    src: url(fonts/FogtwoNo5.ttf);
+  }
+
+@font-face{
+    font-family: Atkinson-Hyperlegible-Regular-102;
+    src: url(fonts/Atkinson-Hyperlegible-Regular-102.ttf);
+  }
+
+
+.main {
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: always;
+    overflow-y: scroll;
+    height: 100vh;
+    font-family: FogtwoNo5;
+      
+}
+
+.navbar-container {
+    min-height: 100%;
+    flex-grow: 1;
+}
+
+.homeImage-container {
+    min-height: 100%;
+    flex-grow: 2;
+}
+
+.footer-container {
+    min-height: 100px;
+    flex-grow: 1;
+
+}
+
+//Home scsss
+
+.homeScreen-container {
+    display: flex;
+    height: 100vh;
+    scroll-snap-align: start;
+    width: 100%;
+}
+
+.frontPage {
+    align-items: flex-end;
+}
+
+.arcs {
+    // background-color: red;
+}
+
+.archives {
+    background-color: burlywood;
+}
+
+.banner, .arc1, .midnight{
+    margin-left: 20%;
+}
+
+
+.centre-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+.navBar-container {
+    width: 20%;
+    height: 100vh;
+    background-color: floralwhite;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+
+    .logo-container {
+        position: relative;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            object-fit: cover;
+            width: 70%;
+            height: 70%;
+        }
+    }
+
+    .contents-container {
+        position: absolute;
+        top: 45%;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            color: black;
+            margin: 5px 0;
+            font-size: 30px;
+            letter-spacing: -0.15rem;
+            text-transform: uppercase;
+            display: inline-block;
+            position: relative;
+        }
+
+        a::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: black;
+            transform-origin: bottom right;
+            transition: transform 0.4s ease-out;
+        }  
+
+        a:hover::after{
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    }
+}
+
+.rightSidebar-container {
+    position: fixed;
+    margin-left: 80%;
+    width: 20%;
+    height: 100%;
+    background-color: brown;
+}
+
+
+// arc1 css
+
+.arc1 {
+    margin-top: 10%;
+}
+
+
+h2 {
+    margin: 0;
+    margin-bottom: -8px;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: -0.2rem;
+}
+
+p {
+    margin: 0;
+    
+}
+
+.title-container {
+    margin: 0 0 1rem 1rem;
+    text-transform: uppercase;
+    p{
+        font-size: 25px;
+    }
+
+}
+
+.description-container {
+    margin: 1rem 0 0 1rem;
+    font-family: Atkinson-Hyperlegible-Regular-102;
+}
+
+.socks-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25%);
+    width: 100%;
+    justify-content: center;
+}
+
+.sock {
+    // width: 100%;
+    // height: 100%;
+    margin: 2px;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+// archives page
+
+.archives {
+    justify-content: center;
+
+    h2{
+        margin-left: 30px;
+    }
+}
+
+
+.archives-container {
+    margin-top: 2%;
+    width: 100%;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 14rem);
+}
+
+.archive {
+    width: 100%;
+    position: relative;
+
+    img {
+        border-radius: 5px;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    p {
+        position: absolute;
+        top: 8px;
+        writing-mode: vertical-rl;
+        font-size: 35px;
+        letter-spacing: -0.15rem;
+        word-spacing: 7px;
+    }
+
+}
+
+
+// ARC1 SOCKS 
+
+// MIDNIGHT 
+
+.midnight{
+ background-color: bisque;
+}
