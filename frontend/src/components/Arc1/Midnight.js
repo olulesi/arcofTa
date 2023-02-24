@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "../Navbar";
 import Socks from "./Socks"
+import Archives from "../Archives";
+import Contact from "../Contact";
 
 const Midnight = () => {
     return (
@@ -10,7 +12,7 @@ const Midnight = () => {
                     <Navbar />
                 </div>
                 <div className='centre-container midnight' id='banner'>
-                    <h2 className="">
+                    <h2 className="arcSock-title">
                         Midnight
                     </h2>
                     <Socks />
@@ -18,8 +20,15 @@ const Midnight = () => {
                 <div className='rightSidebar-container'></div>
             </div>
             <div className='homeScreen-container arcs' id='arc1'>
+                <div className="arcVideo-container">
+                    
+                </div>
             </div>
             <div className='homeScreen-container archives' id='archives'>
+                <Archives />
+            </div>
+            <div className='homeScreen-container contact' id='contact'>
+                <Contact />
             </div>
         </div>
     );
