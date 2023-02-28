@@ -36,7 +36,7 @@ function Home() {
                 <div className='homeScreen-container archives' id='archives'>
                     <Archives />
                 </div>
-                <div className='homeScreen-container contact' id='contact'>
+                <div className='homeScreen-container arcs' id='contact'>
                     <Contact />
                 </div>
             </div>

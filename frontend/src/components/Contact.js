@@ -4,7 +4,8 @@ function Contact() {
 
     return (
         <>
-            <div>  
+            <div>
+                BITCH  
             </div>          
         </>
     )

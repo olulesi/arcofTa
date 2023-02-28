@@ -61,7 +61,7 @@ body {
     background-color: burlywood;
 }
 
-.banner, .arc1, .midnight{
+.banner, .arc1, .midnight, .contact{
     margin-left: 20%;
 }
 
@@ -252,15 +252,48 @@ p {
 
 }
 
+//CONTACT US
+
+
+
+
 
 // ARC1 SOCKS 
 
 // MIDNIGHT 
 
 .midnight{
- background-color: bisque;
+ background-color: white;
 }
 
 .arcSock-title{
+    margin-top: 80px;
     position: fixed;
+}
+
+.sock-container{
+    position: absolute;
+    width: 800px;
+    height: 800px;
+
+}
+
+.s1{
+    right: 66%;
+    bottom: -35%;
+}
+
+.s2{
+    right: 42%;
+    bottom: 9%;
+}
+
+.s3{
+    right: 18%;
+    bottom: 53%;
+}
+
+.s4{
+    right: 23%;
+    bottom: -35%;
 }
