@@ -9,7 +9,7 @@ function NavBar() {
             <Link className="logo-container" to="/" smooth>
                 <img src={logo} alt="logo" className="" />
             </Link>
-            <div className="contents-container">
+            <div className="navContents-container">
                 <Link to="#arc1" smooth>ARC1</Link>
                 <Link to="#archives" smooth>Archives</Link>
                 <Link to="#contact" smooth>Contact us</Link>

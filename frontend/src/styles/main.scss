@@ -24,53 +24,27 @@ body {
       
 }
 
-.navbar-container {
-    min-height: 100%;
-    flex-grow: 1;
-}
-
-.homeImage-container {
-    min-height: 100%;
-    flex-grow: 2;
-}
-
-.footer-container {
-    min-height: 100px;
-    flex-grow: 1;
-
-}
-
 //Home scsss
 
 .homeScreen-container {
     display: flex;
+    flex-direction: column;
     height: 100vh;
     scroll-snap-align: start;
     width: 100%;
 }
 
-.frontPage {
-    align-items: flex-end;
-}
-
-.arcs {
-    // background-color: red;
-}
-
-.archives {
-    background-color: burlywood;
-}
-
-.banner, .arc1, .midnight, .contact{
-    margin-left: 20%;
+.arc1, .midnight, .contact{
+    // margin-left: 20%;
+    flex-direction: column;
 }
 
 
 .centre-container {
     display: flex;
-    flex-direction: column;
-    width: 60%;
-    height: 100%;
+    
+    width: 100%;
+    min-height: 60%;
 
     img {
         object-fit: cover;
@@ -82,12 +56,11 @@ body {
 
 
 .navBar-container {
-    width: 20%;
-    height: 100vh;
-    background-color: floralwhite;
+    width: 100%;
+    min-height: 20%;
     display: flex;
     flex-direction: column;
-    position: fixed;
+    // position: fixed;
 
     .logo-container {
         position: relative;
@@ -104,21 +77,21 @@ body {
         }
     }
 
-    .contents-container {
-        position: absolute;
+    .navContents-container {
+        // position: absolute;
         top: 45%;
         width: 100%;
         height: 20%;
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
 
         a {
             text-decoration: none;
             color: black;
             margin: 5px 0;
-            font-size: 30px;
+            font-size: 1.88rem;
             letter-spacing: -0.15rem;
             text-transform: uppercase;
             display: inline-block;
@@ -146,11 +119,11 @@ body {
 }
 
 .rightSidebar-container {
-    position: fixed;
-    margin-left: 80%;
-    width: 20%;
-    height: 100%;
-    background-color: brown;
+    // position: fixed;
+    // margin-left: 80%;
+    width: 100%;
+    min-height: 20%;
+    // background-color: brown;
 }
 
 
@@ -181,7 +154,6 @@ p {
     p{
         font-size: 25px;
     }
-
 }
 
 .description-container {
