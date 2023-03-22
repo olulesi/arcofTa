@@ -4,15 +4,15 @@ body {
     padding: 0;
 }
 
-@font-face{
+@font-face {
     font-family: FogtwoNo5;
     src: url(fonts/FogtwoNo5.ttf);
-  }
+}
 
-@font-face{
+@font-face {
     font-family: Atkinson-Hyperlegible-Regular-102;
     src: url(fonts/Atkinson-Hyperlegible-Regular-102.ttf);
-  }
+}
 
 
 .main {
@@ -21,7 +21,7 @@ body {
     overflow-y: scroll;
     height: 100vh;
     font-family: FogtwoNo5;
-      
+
 }
 
 //Home scsss
@@ -34,17 +34,98 @@ body {
     width: 100%;
 }
 
-.arc1, .midnight, .contact{
-    // margin-left: 20%;
-    flex-direction: column;
+@media (min-width: 40em) {
+
+    .homeScreen-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+
+    .navBar-container {
+        width: 20%;
+        height: 100vh;
+        background-color: floralwhite;
+
+        .logo-container {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 8px;
+
+            img {
+                object-fit: cover;
+                width: 70%;
+                height: 70%;
+            }
+        }
+
+        .contents-container {
+            position: absolute;
+            top: 45%;
+            width: 100%;
+            height: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+
+    .rightSidebar-container {
+        margin-top: 0vh;
+        margin-left: 80%;
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        h4 {
+            margin: 0.2rem 0;
+        }
+
+        p {
+            text-transform: uppercase;
+        }
+    }
+
+    .centre-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        width: 60%;
+        height: 100%;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+
+}
+
+
+.banner .arc1,
+.midnight,
+.contact {
+
+    // flex-direction: column;
 }
 
 
 .centre-container {
     display: flex;
-    
+    margin-top: 20vh;
     width: 100%;
-    min-height: 60%;
+    height: 60%;
 
     img {
         object-fit: cover;
@@ -57,23 +138,24 @@ body {
 
 .navBar-container {
     width: 100%;
-    min-height: 20%;
+    height: 20%;
     display: flex;
     flex-direction: column;
-    // position: fixed;
+    justify-content: center;
+    position: fixed;
 
     .logo-container {
-        position: relative;
         width: 100%;
-        height: 20%;
+        height: 40%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+        margin-left: 8px;
 
         img {
             object-fit: cover;
-            width: 70%;
-            height: 70%;
+            width: 20%;
+            height: 100%;
         }
     }
 
@@ -81,24 +163,24 @@ body {
         // position: absolute;
         top: 45%;
         width: 100%;
-        height: 20%;
+        // height: 40%;
         display: flex;
         // flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
 
         a {
             text-decoration: none;
             color: black;
             margin: 5px 0;
-            font-size: 1.88rem;
+            font-size: 1.48rem;
             letter-spacing: -0.15rem;
             text-transform: uppercase;
             display: inline-block;
             position: relative;
         }
 
-        a::after{
+        a::after {
             content: '';
             position: absolute;
             width: 100%;
@@ -109,9 +191,9 @@ body {
             background-color: black;
             transform-origin: bottom right;
             transition: transform 0.4s ease-out;
-        }  
+        }
 
-        a:hover::after{
+        a:hover::after {
             transform: scaleX(1);
             transform-origin: bottom left;
         }
@@ -119,11 +201,23 @@ body {
 }
 
 .rightSidebar-container {
-    // position: fixed;
-    // margin-left: 80%;
+    position: fixed;
+    margin-top: 80vh;
     width: 100%;
     min-height: 20%;
-    // background-color: brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+
+    h4 {
+        margin: 0.2rem 0;
+    }
+
+    p {
+        text-transform: uppercase;
+    }
 }
 
 
@@ -145,13 +239,14 @@ h2 {
 
 p {
     margin: 0;
-    
+
 }
 
 .title-container {
     margin: 0 0 1rem 1rem;
     text-transform: uppercase;
-    p{
+
+    p {
         font-size: 25px;
     }
 }
@@ -187,7 +282,7 @@ p {
 .archives {
     justify-content: center;
 
-    h2{
+    h2 {
         margin-left: 30px;
     }
 }
@@ -234,38 +329,38 @@ p {
 
 // MIDNIGHT 
 
-.midnight{
- background-color: white;
+.midnight {
+    background-color: white;
 }
 
-.arcSock-title{
+.arcSock-title {
     margin-top: 80px;
     position: fixed;
 }
 
-.sock-container{
+.sock-container {
     position: absolute;
     width: 800px;
     height: 800px;
 
 }
 
-.s1{
+.s1 {
     right: 66%;
     bottom: -35%;
 }
 
-.s2{
+.s2 {
     right: 42%;
     bottom: 9%;
 }
 
-.s3{
+.s3 {
     right: 18%;
     bottom: 53%;
 }
 
-.s4{
+.s4 {
     right: 23%;
     bottom: -35%;
 }

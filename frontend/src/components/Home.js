@@ -22,10 +22,8 @@ function Home() {
                         <img src={banner} alt="banner" className="w-full h-full object-cover" />
                     </div>
                     <div className='rightSidebar-container'>
-                        <h4>
-                            ARC1
-                        </h4>
-                        <p>"From the Ground Up</p>
+                        <h4>ARC1</h4>
+                        <p>"From the Ground Up"</p>
                     </div>
                 </div>
                 <div className='homeScreen-container arcs' id='arc1'>

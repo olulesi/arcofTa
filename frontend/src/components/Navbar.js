@@ -12,7 +12,7 @@ function NavBar() {
             <div className="navContents-container">
                 <Link to="#arc1" smooth>ARC1</Link>
                 <Link to="#archives" smooth>Archives</Link>
-                <Link to="#contact" smooth>Contact us</Link>
+                <Link to="#contact" smooth>About Us</Link>
             </div>
         </>
     )
