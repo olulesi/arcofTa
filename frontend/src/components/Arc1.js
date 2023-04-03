@@ -27,7 +27,7 @@ const Arc1 = () => {
                     {images.map((image, index) => (
                         <Link
                             to={`/${image.title}`}
-                            style={{backgroundColor: `${image.bg}`}} 
+                            // style={{backgroundColor: `${image.bg}`}} 
                             key={index}  
                             className={"sock"}
                         >

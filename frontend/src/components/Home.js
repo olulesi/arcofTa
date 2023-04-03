@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 // import RightSidebar from "./RightSidebar";
 import Arc1 from "./Arc1";
 // import Archives from "./Archives";
-// import Contact from './Contact';
+import AboutUs from './AboutUs';
 import banner from "../images/banner.png"
 
 
@@ -31,10 +31,10 @@ function Home() {
                 </div>
                 {/* <div className='homeScreen-container archives' id='archives'>
                     <Archives />
-                </div>
-                <div className='homeScreen-container arcs' id='contact'>
-                    <Contact />
                 </div> */}
+                <div className='homeScreen-container banner' id='aboutUs'>
+                    <AboutUs />
+                </div>
             </div>
         </>
     );

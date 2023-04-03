@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../Navbar";
 import Socks from "./Socks"
 import Archives from "../Archives";
-import Contact from "../Contact";
+// import Contact from "../Contact";
 
 const Midnight = () => {
     return (
@@ -26,9 +26,6 @@ const Midnight = () => {
             </div>
             <div className='homeScreen-container archives' id='archives'>
                 <Archives />
-            </div>
-            <div className='homeScreen-container contact' id='contact'>
-                <Contact />
             </div>
         </div>
     );

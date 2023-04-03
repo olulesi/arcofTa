@@ -1,3 +1,7 @@
+@import '_arc1.scss';
+@import '_aboutUs.scss';
+
+
 html,
 body {
     margin: 0;
@@ -34,7 +38,7 @@ body {
     width: 100%;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 80em) {
 
     .homeScreen-container {
         display: flex;
@@ -80,17 +84,25 @@ body {
     }
 
     .rightSidebar-container {
-        margin-top: 0vh;
+        background-color: aqua;
         margin-left: 80%;
-        width: 20%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: flex-end;
+        padding-bottom: 20px;
+        padding-right: 10px;
+        max-width: 20%;
+        min-height: 100% !important;
+        // display: flex;
+        // flex-direction: column;
+        align-items: flex-end !important;
+        justify-content: flex-end !important;
+
+
+        h4,p{
+            padding-right: 15%;
+        }
 
         h4 {
             margin: 0.2rem 0;
+            font-size: 20px;
         }
 
         p {
@@ -101,18 +113,10 @@ body {
     .centre-container {
         display: flex;
         flex-direction: column;
-        margin-top: 0;
-        width: 60%;
-        height: 100%;
-
-        img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-        }
+        margin-left: 20%;
+        max-width: 60%;
+        min-height: 100%;
     }
-
-
 }
 
 
@@ -129,7 +133,9 @@ body {
     margin-top: 20vh;
     width: 100%;
     height: 60%;
+}
 
+.banner{
     img {
         object-fit: cover;
         width: 100%;
@@ -221,62 +227,6 @@ body {
         text-transform: uppercase;
     }
 }
-
-
-// arc1 css
-
-.arc1 {
-    margin-top: 10%;
-}
-
-
-h2 {
-    margin: 0;
-    margin-bottom: -8px;
-    font-size: 60px;
-    text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: -0.2rem;
-}
-
-p {
-    margin: 0;
-
-}
-
-.title-container {
-    margin: 0 0 1rem 1rem;
-    text-transform: uppercase;
-
-    p {
-        font-size: 25px;
-    }
-}
-
-.description-container {
-    margin: 1rem 0 0 1rem;
-    font-family: Atkinson-Hyperlegible-Regular-102;
-}
-
-.socks-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 25%);
-    width: 100%;
-    justify-content: center;
-}
-
-.sock {
-    // width: 100%;
-    // height: 100%;
-    margin: 2px;
-
-    img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
-}
-
 
 
 // archives page
