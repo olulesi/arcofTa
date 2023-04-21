@@ -6,7 +6,7 @@
   
 //   // const [progress, setProgress] = useState(0);
 //   // // const [speed, setSpeed] = useState(1);
-//   // const [muted, setMuted] = useState(false);
+
 //   // // const [speed, setSpeed] = useState(1);
 //   // const [playerState, setPlayerState] = useState({
 //   //   isPlaying: false,
@@ -50,13 +50,6 @@
 //   //   });
 //   // };
 
-  
-
-//   // React.useEffect(() => {
-//   //   playerState.isMuted
-//   //     ? (videoElement.current.muted = true)
-//   //     : (videoElement.current.muted = false);
-//   // }, [playerState.isMuted, videoElement]);
 
 //   return (
 //     // playing
