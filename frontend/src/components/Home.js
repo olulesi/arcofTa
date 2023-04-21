@@ -6,7 +6,6 @@ import Arc1 from "./Arc1";
 import AboutUs from './AboutUs';
 import banner from "../images/banner.png"
 
-
 //Banner Image Needed
 
 function Home() {
