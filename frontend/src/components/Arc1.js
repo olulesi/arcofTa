@@ -5,7 +5,8 @@ import Midnight from "../images/Arc1/Midnight.png";
 import Bourbon from "../images/Arc1/Bourbon.png";
 import Sahara from "../images/Arc1/Sahara.png";
 import Cocaine from "../images/Arc1/Cocaine.png";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const images = [
     { img: Midnight, bg: "#131419" ,title: 'Midnight'},
@@ -13,8 +14,12 @@ const images = [
     { img: Sahara, bg: "#f2e0b2", title: 'Sahara' },
     { img: Cocaine, bg: "#f6f7f9", title: 'Cocaine' },
 ];
-console.log(images[0].img)
-const Arc1 = () => {
+
+
+function Arc1() {
+    AOS.init();
+
+
     return (
         <>
             <div className="centre-container arc1">

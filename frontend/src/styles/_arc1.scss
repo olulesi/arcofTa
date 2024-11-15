@@ -48,14 +48,14 @@ p {
 
 @media (min-width: 80em) {
 
-    // .arc1{
-    //     justify-content: center;
-    // }
+    .arc1{
+        justify-content: center;
+    }
 
     .title-container {
         margin: 0 0 1rem 1rem;
         text-transform: uppercase;
-        margin-top: 17%;
+        // margin-top: 17%;
     
         p {
             font-size: 25px;
