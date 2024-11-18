@@ -12,7 +12,7 @@ function NavBar() {
         <Link to="#arc1" smooth>
           Archive.
         </Link>
-        <Link to="#archives" smooth>
+        <Link to="/Contact" smooth>
           Contact
         </Link>
         <Link to="#contact" smooth>
