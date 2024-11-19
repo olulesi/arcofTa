@@ -1,0 +1,50 @@
+.About-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.special-text {
+  font-family: Helvetica-Bold;
+}
+
+.About-text {
+  text-align: center;
+}
+
+@media (max-width: 80em) {
+  .About-container {
+    flex-direction: column;
+  }
+
+  .About-title {
+    // margin-top: -10rem;
+  }
+
+  .About-text {
+    width: 75%;
+    margin-top: 2rem;
+  }
+
+  .About-description {
+    margin: 2rem 0;
+  }
+
+  .brand-text {
+    font-size: 47px;
+  }
+}
+@media (min-width: 80em) {
+  .About-title {
+    margin-top: -7rem;
+  }
+  .About-text {
+    width: 65%;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .About-description {
+    margin: 1rem 0;
+  }
+}

@@ -1,6 +1,7 @@
 @import '_arc1.scss';
 @import '_aboutUs.scss';
 @import '_contact.scss';
+@import '_about.scss';
 
 html,
 body {
@@ -27,6 +28,11 @@ body {
 @font-face {
   font-family: Helvetica;
   src: url(fonts/Helvetica.ttf);
+}
+
+@font-face {
+  font-family: Helvetica-Bold;
+  src: url(fonts/Helvetica-Bold.ttf);
 }
 
 .main {
@@ -59,7 +65,7 @@ a {
     .logo-container {
       align-items: center;
       img {
-        width: 50%;
+        width: 43%;
         height: 100%;
       }
     }
@@ -162,6 +168,7 @@ a {
 }
 
 .navBar-container {
+  z-index: 1;
   width: 100%;
   height: 20%;
   display: flex;
@@ -174,6 +181,7 @@ a {
     height: 40%;
     display: flex;
     justify-content: center;
+    flex: 1;
     img {
       object-fit: contain;
     }
@@ -184,6 +192,7 @@ a {
     display: flex;
     font-size: 2rem;
     width: 100%;
+    flex: 1;
 
     // padding: 0 3rem;
 

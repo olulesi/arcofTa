@@ -4,6 +4,7 @@ import Home from './components/Home'
 import Arc2 from './components/Arc2'
 import Midnight from './components/Arc1/Midnight'
 import Contact from './components/ContactLayout'
+import About from './components/AboutLayout'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route exact path="/demo" element={<Arc2 />} />
           <Route exact path="/Midnight" element={<Midnight />} />
           <Route exact path="/Contact" element={<Contact />} />
+          <Route exact path="/About" element={<About />} />
           {/* <Route exact path="/Bourbon" element={<Home />} />
         <Route exact path="/Sahara" element={<Home />} />
         <Route exact path="/Cocaine" element={<Home />} /> */}

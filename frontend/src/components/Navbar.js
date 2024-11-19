@@ -8,14 +8,14 @@ function NavBar() {
       <Link className="logo-container" to="/" smooth>
         <img src={logo} alt="logo" className="" />
       </Link>
-      <div className="navContents-container">
+      <div className="navContents-container special-text">
         <Link to="#arc1" smooth>
           Archive.
         </Link>
         <Link to="/Contact" smooth>
           Contact
         </Link>
-        <Link to="#contact" smooth>
+        <Link to="/About" smooth>
           About
         </Link>
       </div>
