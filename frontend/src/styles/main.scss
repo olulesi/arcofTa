@@ -2,12 +2,19 @@
 @import '_aboutUs.scss';
 @import '_contact.scss';
 @import '_about.scss';
+@import '_archives.scss';
+@import '_project.scss';
 
 html,
-body {
+body,
+h5 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
 }
 
 @font-face {
@@ -138,14 +145,13 @@ a {
       font-size: 20px;
     }
 
-    p {
+    .footer {
       text-transform: uppercase;
     }
   }
 
   .centre-container {
     display: flex;
-    flex-direction: column;
     margin-left: 20%;
     max-width: 60%;
     min-height: 100%;
@@ -240,7 +246,7 @@ a {
     margin: 0.2rem 0;
   }
 
-  p {
+  .footer {
     text-transform: uppercase;
   }
 }

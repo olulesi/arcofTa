@@ -9,7 +9,7 @@ function NavBar() {
         <img src={logo} alt="logo" className="" />
       </Link>
       <div className="navContents-container special-text">
-        <Link to="#arc1" smooth>
+        <Link to="/Archives" smooth>
           Archive.
         </Link>
         <Link to="/Contact" smooth>

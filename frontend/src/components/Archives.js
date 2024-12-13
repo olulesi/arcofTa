@@ -1,40 +1,35 @@
-import React from "react";
-import JoshuaMohammed from "../images/Archive/JoshuaMohammed.png";
-import Damned from "../images/Archive/Face.jpg";
-import EquiHouse from "../images/Archive/ModelBreakdown.png";
+import React from 'react'
+import { HashLink as Link } from 'react-router-hash-link'
 
-
-const archives = [
-  { img: JoshuaMohammed, text: "Joshua Mohamed" },
-  { img: Damned, text: "TOG" },
-  { img: EquiHouse, text: "Equi-House" },
-];
-
-const Archives = () => {
+function Archives() {
   return (
-    <section className="archives centre-container">
-      <h2 className="">Archives</h2>
-      <div className="archives-container">
-        {archives.map((archive, index) => (
-          <div
-            key={index}
-            className="archive"
-          >   
-              <img
-                src={archive.img}
-                alt=""
-                className=""
-              />
-            <p
-              className=""
-            >
-              {archive.text}
-            </p>
-          </div>
-        ))}
+    <>
+      <div className="centre-container Archives-container">
+        <table className="table-container">
+          <thead className="Row-Container">
+            <tr className="Title">
+              <th>Campaign</th>
+              <th>Sketchbook</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="Row-Container">
+              <td data-cell="Campaign">
+                <Link to="/Arc1" smooth>
+                  Arc 1
+                </Link>
+              </td>
+              <td data-cell="Sketchbook">
+                <Link to="/FromthegroundUp" smooth>
+                  "From the ground Up"
+                </Link>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </section>
-  );
-};
+    </>
+  )
+}
 
-export default Archives;
+export default Archives
