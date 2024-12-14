@@ -1,6 +1,7 @@
 import React from 'react'
-import Journey from '../images/journey2.mp4'
-import 'boxicons'
+// import BOURBON from '../images/Arc1/BOURBON.mp4'
+import BOURBON from '../images/journey2.mp4'
+// import 'boxicons'
 
 const useElementOnScreen = (options) => {
   const videoElement = React.useRef(null)
@@ -72,7 +73,7 @@ function Project() {
       <div className="banner centre-container video-container" id="banner">
         <div className="video-wrapper">
           <video
-            src={Journey}
+            src={BOURBON}
             ref={videoElement}
             muted="muted"
             onClick={togglePlay}
