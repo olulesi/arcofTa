@@ -1,6 +1,7 @@
 .sockText-container {
-  margin-bottom: 11rem;
-  margin-left: 1.5rem;
+  margin: 0 auto;
+  padding-top: 1rem;
+  width: 90%;
 
   .sock-title {
     font-size: 1.23rem;
@@ -15,4 +16,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+@media (max-width: 80em) {
+  .sock-description {
+    font-size: 1rem;
+  }
 }

@@ -11,7 +11,7 @@ function ArchivesLayout() {
     <>
       <div className="main">
         <div className="homeScreen-container">
-          <div className="navBar-container">
+          <div className="navBar-container non-fixed">
             <NavBar />
           </div>
           <Archives />

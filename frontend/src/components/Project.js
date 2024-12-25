@@ -1,12 +1,13 @@
 import React from 'react'
-// import BOURBON from '../images/Arc1/BOURBON.mp4'
-import BOURBON from '../images/journey2.mp4'
+import BOURBON from '../images/Arc1/BOURBON.mp4'
+// import videos from '../components/FTGU/videos'
+
 // import 'boxicons'
 
 const useElementOnScreen = (options) => {
   const videoElement = React.useRef(null)
-  const [isVisible, setIsVisible] = React.useState(false)
 
+  const [isVisible, setIsVisible] = React.useState(false)
   const callbackFunction = (entries) => {
     const [entry] = entries
     setIsVisible(entry.isIntersecting)
@@ -28,12 +29,22 @@ function Project() {
   const [playing, setPlaying] = React.useState(false)
   const [muted, setMuted] = React.useState(true)
   const [paused, setPaused] = React.useState(false)
+  // const [activeVideo, setActiveVideo] = React.useState(0)
 
   const [videoElement, isVisible] = useElementOnScreen({
     root: null,
     rootMargin: '0px',
     threshold: 1.0,
   })
+
+  // const handleVideoChange = (e) => {
+  //   const scrollY = e.target.scrollTop // Amount scrolled
+  //   const newIndex = Math.min(
+  //     Math.floor(scrollY / window.innerHeight),
+  //     videos.length - 1
+  //   )
+  //   setActiveVideo(newIndex)
+  // }
 
   const togglePlay = React.useCallback(
     (event) => {
@@ -78,6 +89,7 @@ function Project() {
             muted="muted"
             onClick={togglePlay}
             autoPlay=""
+            className="video-player"
           />
           <button className="togglePlay-container" onClick={togglePlay}>
             {!playing ? (
@@ -107,6 +119,16 @@ function Project() {
               </svg>
             )}
           </button>
+        </div>
+        <div className="sockText-container">
+          <h5 className="sock-title">BOURBON</h5>
+          <p className="sock-description">
+            A sock is neither thought about or seen, however, it aids us in the
+            comfort of moving around in our daily lives. The "from the ground
+            up" collection by arcofta represents the start of the journey, the
+            preliminary layering that prepares you for the road aheads, an easy
+            journey was never promised.
+          </p>
         </div>
       </div>
     </>

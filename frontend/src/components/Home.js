@@ -18,7 +18,7 @@ function Home() {
     <>
       <div className="main">
         <div className="homeScreen-container">
-          <div className="navBar-container">
+          <div className="navBar-container non-fixed">
             <Navbar />
           </div>
           <Link

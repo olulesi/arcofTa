@@ -1,16 +1,20 @@
-.Scarf-container {
+.overlay-video {
   width: 100%;
-  height: 100vh;
-  font-family: Helvetica;
+  height: 100%;
+  object-fit: cover;
+}
 
-  video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.overlay-fix {
+  position: fixed;
+  width: -webkit-fill-available;
+}
+
+.overlay-wrapper {
+  position: absolute;
 }
 
 .Contact-container {
+  font-family: Helvetica;
   position: fixed;
   text-align: center;
   width: 100%;
@@ -39,6 +43,10 @@
 }
 
 @media (max-width: 80em) {
+  .overlay-fix {
+    margin: 0 1.2rem;
+    width: -webkit-fill-available;
+  }
   .Contact-container {
     font-size: 1rem;
   }
